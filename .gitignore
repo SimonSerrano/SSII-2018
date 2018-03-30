@@ -1,6 +1,7 @@
 # Created by .ignore support plugin (hsz.mobi)
 .pom.xml
 
+Runner.java
 
 ### Maven template
 target/

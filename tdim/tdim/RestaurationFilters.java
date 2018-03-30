@@ -80,7 +80,7 @@ public class RestaurationFilters extends ImageTransform {
 
 					int[][] sortnmask = nmask;
 					Arrays.sort(sortnmask);
-					nmask[1][1] = sortnmask[2][2]!=0?sortnmask[2][2]: nmask[1][1];
+					nmask[1][1] = nmask[1][1]<=sortnmask[2][2] && nmask[1][1]>sortnmask[0][0]?nmask[1][1]: sortnmask[0][0];
 					bout.setRGB(i, j, nmask[1][1]);
 				}
 			}
